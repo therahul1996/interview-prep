@@ -14,3 +14,4 @@ Welcome to the Interview Preparation Guide. This repository contains a curated l
 * [Nest.JS](./Nest.JS/README.md)
 * [Docker](./Docker/README.md)
 * [Python](./Python/README.md)
+* [Time & Space](./Time&Space/README.md)
