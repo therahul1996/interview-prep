@@ -5,6 +5,7 @@ Welcome to the Interview Preparation Guide. This repository contains a curated l
 ## Topics
 
 * [React](./React/README.md)
+* [React 19](./React-19/README.md)
 * [Next.js](./Next.js/README.md)
 * [Javascript](./Javascript/README.md)
 * [Angular](./Angular/README.md)
