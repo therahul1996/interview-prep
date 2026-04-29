@@ -103,11 +103,9 @@ In PostgreSQL, you can use the GROUP BY clause along with aggregate functions su
 SELECT column1, SUM(column2) FROM tableName GROUP BY column1;
 ````
 
-## What's more?
-<a href="https://interviewplus.ai/database-administration/postgres/questions">A comprehensive list of questions and answers</a>
 
-## Contributing
-We welcome contributions from our users to help make this resource as comprehensive and useful as possible. If you have been recently interviewed and encountered a question that is not currently covered on our website, feel free to suggest it as a new question. Your contributions will be added to our platform, and we will make sure to credit you for your contributions. We appreciate your help in making our platform a valuable tool for all job seekers.
+---
 
-## License
-MIT License
+> 💡 **Tip:** Star this repo if you find it helpful, and revisit often — more questions are added regularly.
+
+**[⬆ Back to Top](#)**

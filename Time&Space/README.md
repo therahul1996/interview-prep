@@ -163,3 +163,9 @@ function recursiveBinarySearch(arr, target, low = 0, high = arr.length - 1) {
 - **Time vs. Space Trade-off:** Often, you will need to choose between optimizing an algorithm for time (speed) or space (memory). E.g., utilizing a Hash Map saves time ($O(1)$ lookups) but takes more space ($O(n)$).
 - **Ignore Constants:** In Big O notation, constants are dropped. E.g., $O(2n)$ simplifies to $O(n)$.
 - **Base in Logarithms:** The base of logarithms is mostly ignored ($O(\log_2 n)$ is written as $O(\log n)$) because all logarithms are proportional to each other by a constant factor.
+
+---
+
+> 💡 **Tip:** Star this repo if you find it helpful, and revisit often — more questions are added regularly.
+
+**[⬆ Back to Top](#)**

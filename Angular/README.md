@@ -1,6 +1,4 @@
 # Angular Interview Questions & Answers
-<!-- 
-> Click :star: if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates.  -->
 
 
 ### Table of Contents

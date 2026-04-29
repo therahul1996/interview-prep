@@ -1,15 +1,4 @@
 # 55 Common Docker Interview Questions in 2026
-<!-- 
-<div>
-<p align="center">
-<a href="https://devinterview.io/questions/software-architecture-and-system-design/">
-<img src="https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/github-blog-img%2Fsoftware-architecture-and-system-design-github-img.jpg?alt=media&token=521fd2a9-0d56-49c0-a723-9bd6ca081893" alt="software-architecture-and-system-design" width="100%">
-</a>
-</p> -->
-
-#### You can also find all 55 answers here 👉 [Devinterview.io - Docker](https://devinterview.io/questions/software-architecture-and-system-design/docker-interview-questions)
-
-<br>
 
 ## 1. What is _Docker_, and how is it different from _virtual machines_?
 
@@ -74,8 +63,6 @@ CMD ["python", "app.py"]
 - **Container Orchestration**: Technologies such as Kubernetes and Docker Swarm enable the management of clusters of containers, providing features like load balancing, scaling, and automated rollouts and rollbacks.
 
 - **Interoperability**: Docker containers are portable, running consistently across diverse environments. Additionally, Docker complements numerous other tools and platforms, including Jenkins for CI/CD pipelines and AWS for cloud services.
-<br>
-
 ## 2. Can you explain what a _Docker image_ is?
 
 A **Docker image** is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software, including the code, a runtime, libraries, environment variables, and configuration files.
@@ -136,8 +123,6 @@ CMD ["/bin/bash"]
 - Aim for minimal layers for better efficiency.
 - Regularly update the base image to ensure security and feature updates.
 - Reduce the number of packages installed to minimize security risks.
-<br>
-
 ## 3. How does a _Docker container_ differ from a _Docker image_?
 
 **Docker images** serve as templates for containers, whereas **Docker containers** are running instances of those images.
@@ -218,8 +203,6 @@ docker rm mycontainer
 ```bash
 docker image prune -a
 ```
-<br>
-
 ## 4. What is the _Docker Hub_, and what is it used for?
 
 The **Docker Hub** is a public cloud-based registry for Docker images. It's a central hub where you can find, manage, and share your Docker container images. Essentially, it is a **version control system** for Docker containers. 
@@ -262,8 +245,6 @@ The **Docker Hub** is a public cloud-based registry for Docker images. It's a ce
 - **Limitations**:
     - Limited Private Repositories in the Free Plan
     - Might Require Additional Security Measures for Sensitive Workloads
-<br>
-
 ## 5. Explain the _Dockerfile_ and its significance in _Docker_.
 
 One of the defining features of **Docker** is its use of `Dockerfiles` to automate the creation of container images. A **Dockerfile** is a text document that contains all the commands a user could call on the command line to assemble an image.
@@ -323,8 +304,6 @@ EXPOSE 3000
 # Start the Node.js application
 CMD ["node", "app.js"]
 ```
-<br>
-
 ## 6. How does _Docker_ use _layers_ to build images?
 
 **Docker** follows a **Layered File System** approach, employing Union File Systems like **AUFS**, **OverlayFS**, and **Device Mapper** to stack image layers.
@@ -368,8 +347,6 @@ COPY app.py /app
 # Placeholder for Dockerfile
 # ...
 ```
-<br>
-
 ## 7. What's the difference between the `COPY` and `ADD` commands in a _Dockerfile_?
 
 Let's look at the subtle distinctions between the `COPY` and `ADD` commands within a Dockerfile.
@@ -392,8 +369,6 @@ Let's look at the subtle distinctions between the `COPY` and `ADD` commands with
 - **Avoid Web-Based Transfers**: Steer clear of resource retrieval from untrusted URLs within Dockerfiles. It's safer to copy these resources into your build context, ensuring security and reproducibility.
 
 - **Cache Management**: Because `ADD` can bypass caching for resources that are even minimally different from their cached versions, it can inadvertently lead to slowed build processes. To avoid this, prefer the deterministic, cache-friendly behavior of `COPY` whenever plausible.
-<br>
-
 ## 8. What’s the purpose of the `.dockerignore` file?
 
 The **`.dockerignore`** file, much like `gitignore`, is a list of patterns indicating which files and directories should be **excluded** from image builds.
@@ -401,8 +376,6 @@ The **`.dockerignore`** file, much like `gitignore`, is a list of patterns indic
 Using this file, you can optimize the **build context**, which is the set of files and directories sent to the Docker daemon for image creation.
 
 By excluding unnecessary files, such as build or data files, you can reduce the build duration and optimize the size of the final Docker image. This is important for **minimizing container footprint** and enhancing overall Docker efficiency.
-<br>
-
 ## 9. How would you go about creating a _Docker image_ from an existing _container_?
 
 Let's look at each of the two main methods:
@@ -486,8 +459,6 @@ Subsequently, you can run a container using this new image and verify your modif
 ```bash
 docker run --rm -it my-ubuntu:with-neofetch neofetch
 ```
-<br>
-
 ## 10. In practice, how do you reduce the size of _Docker images_?
 
 Reducing **Docker image sizes** is crucial for efficient resource deployment. You can achieve this through various strategies.
@@ -597,8 +568,6 @@ Here is an example:
 ```Dockerfile
 COPY ["*.json", "*.sh", "config/", "./"]
 ```
-<br>
-
 ## 11. What command is used to run a _Docker container_ from an _image_?
 
 The lean, transformed and updated version of the answer includes all the essential points.
@@ -649,8 +618,6 @@ This:
 - Opens an interactive terminal.
 - Mounts the host's `/host/path` to the container's `/container/path`.
 - Uses the command `/bin/bash` when starting the container.
-<br>
-
 ## 12. Can you explain what a _Docker namespace_ is and its benefits?
 
 A **Docker namespace** uniquely identifies Docker objects like containers, images, and volumes. Namespaces streamline resource organization and data isolation, supporting your security and operational requirements.
@@ -704,8 +671,6 @@ print(inspect_data)
 # Create a new Docker volume
 client.volumes.create('my-named-volume')
 ```
-<br>
-
 ## 13. What is a _Docker volume_, and when would you use it?
 
 A **Docker volume** is a directory or file within a Docker Host's writable layer that isn't tied to a specific container. This decoupling allows data persistence, even after containers have been stopped or removed.
@@ -729,8 +694,6 @@ Docker volumes are fundamental for data storage and sharing, which is especially
 - **Configuration and Secret Management**: Volumes provide an excellent way to mount **configuration files** and secrets. This can help you secure sensitive data and reduces the need to build it into the application.
 
 - **Backup and Restore**: By using volumes, you can separate your data from the lifecycle of the container. It becomes easier to back them up and restore them in the event of data loss.
-<br>
-
 ## 14. Explain the use and significance of the `docker-compose` tool.
 
 **Docker Compose**, a command-line tool, facilitates multi-container Docker applications, using a YAML file to define their architecture and how they interconnect. This is incredibly useful for setting up multi-container environments and facilitates a "one command" startup for all relevant components. For instance, a **web application** might require a backend database, a message queue, and more. While you can launch these components individually, using `docker-compose` makes it a seamless single-command operation.
@@ -784,8 +747,6 @@ networks:
 - **Volumes**: The `db` service has a volume specified for persistent storage.
   
 - **Networks**: The `web` and `db` services are part of the `backend` network, defined at the bottom. This assures consistent networking, even when services get linked or containers restarted.
-<br>
-
 ## 15. Can _Docker containers_ running on the same _host_ communicate with each other by default? If so, how?
 
 Yes, **Docker containers on the same host** can communicate with each other by default. This is because, when you run a Docker container, it's on a single **network namespace of the host**, and Docker uses that network namespace to manage communication between containers.
@@ -821,15 +782,11 @@ docker inspect -f '{{.NetworkSettings.IPAddress}}' <container_id>
 #### 2. By Container Name
 
 Containers within the same Docker network can reach each other by their names. Use `docker network inspect <your_network_name>` to see container IP addresses and ensure proper network setup.
-<br>
 
 
 
-#### Explore all 55 answers here 👉 [Devinterview.io - Docker](https://devinterview.io/questions/software-architecture-and-system-design/docker-interview-questions)
+---
 
-<br>
+> 💡 **Tip:** Star this repo if you find it helpful, and revisit often — more questions are added regularly.
 
-<a href="https://devinterview.io/questions/software-architecture-and-system-design/">
-<img src="https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/github-blog-img%2Fsoftware-architecture-and-system-design-github-img.jpg?alt=media&token=521fd2a9-0d56-49c0-a723-9bd6ca081893" alt="software-architecture-and-system-design" width="100%">
-</a>
-</p>
+**[⬆ Back to Top](#)**

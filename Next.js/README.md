@@ -1,6 +1,5 @@
-## NextJS Interview Questions & Answers
+# Next.js Interview Questions & Answers
 
-:rocket: This repository aimed to contains 500 nextjs interview questions & answers with exmample.
 
 ---
 
@@ -3763,3 +3762,8 @@
 
 
     ```
+---
+
+> 💡 **Tip:** Star this repo if you find it helpful, and revisit often — more questions are added regularly.
+
+**[⬆ Back to Top](#)**
