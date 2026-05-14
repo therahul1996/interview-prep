@@ -1,4 +1,4 @@
-# API Interview Questions (100) - MOHITDECODES
+# API Interview Questions (100)
 
 A comprehensive guide covering Beginner, Advanced, and Real-Time Scenarios for API interviews.
 
@@ -118,4 +118,3 @@ A comprehensive guide covering Beginner, Advanced, and Real-Time Scenarios for A
 - **Definition:** Designing the API contracts before writing frontend or backend code.
 
 ---
-*Created by MOHITDECODES*
