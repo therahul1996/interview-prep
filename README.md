@@ -13,6 +13,7 @@ Whether you're preparing for your first dev job or aiming for a senior role, thi
 | [React](./React/README.md) | Hooks, state management, lifecycle, performance |
 | [Next.js](./Next.js/README.md) | SSR, SSG, routing, App Router |
 | [JavaScript](./Javascript/README.md) | Core JS, ES6+, async, closures, prototypes |
+| [TypeScript](./TypeScript/README.md) | static typing, type annotations, interfaces, generics |
 | [Angular](./Angular/README.md) | Components, services, RxJS, NgRx |
 | [React Native](./React-Native/README.md) | Mobile development with React Native |
 | [Node.js](./NodeJS/README.md) | Event loop, streams, modules, clustering |
@@ -27,6 +28,16 @@ Whether you're preparing for your first dev job or aiming for a senior role, thi
 
 ---
 
+<div>
+<p align="center">
+<a href="https://devinterview.io/questions/web-and-mobile-development/">
+<img src="https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/github-blog-img%2Fweb-and-mobile-development-github-img.jpg?alt=media&token=1b5eeecc-c9fb-49f5-9e03-50cf2e309555" alt="web-and-mobile-development" width="100%">
+</a>
+</p>
+
+#### You can also find all 100 answers here 👉 [Devinterview.io - Typescript](https://devinterview.io/questions/web-and-mobile-development/typescript-interview-questions)
+
+<br>
 
 ## 🚀 How to Use
 
