@@ -10522,6 +10522,61 @@ Technically it is possible to write nested function components but it is not sug
 
 **[⬆ Back to Top](#table-of-contents)**
 
+## Expert Level / Modern React Q&A (Bonus)
+
+### 1. How does React's fiber architecture work?
+React Fiber is a complete rewrite of React's core rendering algorithm. Its main goal is to increase its suitability for areas like animation, layout, and gestures. Its headline feature is **incremental rendering**: the ability to split rendering work into chunks and spread it out over multiple frames. It achieves this by assigning different priorities to different types of updates and pausing/resuming work as needed to ensure the main thread isn't blocked.
+
+### 2. Explain React's scheduling and priority lanes.
+React's scheduler uses a concept called "priority lanes" (replacing expiration times) to determine which updates to process first. Lanes are like a bitmask representing different priority levels (e.g., synchronous, continuous, default, transition, idle). High-priority updates (like user input) are placed in fast lanes, while low-priority updates (like data fetching transitions) are in slower lanes. React can interrupt a render in a slower lane to process a faster lane update, ensuring a responsive UI.
+
+### 3. What is tearing and how does React 18 prevent it?
+Tearing occurs when a user interface shows inconsistent state (e.g., one part of the UI shows old data, while another shows new data for the same state). In concurrent React, since rendering can be paused and resumed, an external store could change in the middle of a render, causing tearing. React 18 prevents this using the `useSyncExternalStore` hook, which forces synchronous updates when reading from external mutable sources during a concurrent render.
+
+### 4. How do you build a headless component library?
+A headless component provides logic, state management, and accessibility but renders no UI (no DOM elements) of its own. You build them using custom hooks or the Render Props pattern. For example, a `useDropdown` hook would manage `isOpen` state and return ARIA attributes and event handlers (`onClick`, `onKeyDown`), while the consumer applies these to their own custom-styled HTML elements.
+
+### 5. How would you implement time-slicing for an expensive render?
+In modern React, time-slicing is handled automatically when using Concurrent Features. You would wrap the state update that triggers the expensive render in a `startTransition` (from `useTransition`). This tells React the update is low priority, allowing it to slice the rendering work over multiple frames and yield to the main thread for high-priority tasks (like typing or clicking).
+
+### 6. What is island architecture and how does it relate to React?
+Island architecture (popularized by frameworks like Astro) is a paradigm where most of a webpage is rendered as static HTML, and only small, specific, interactive sections ("islands") are hydrated with JavaScript (like React). This drastically reduces the amount of JS sent to the client, improving performance, while still allowing React to power the interactive parts of the UI.
+
+### 7. How do you implement optimistic UI updates?
+Optimistic updates involve updating the UI immediately with the expected result of a server request before the server responds. 
+1. Save the current state.
+2. Update the UI state as if the request succeeded.
+3. Make the API call.
+4. If the call fails, revert the UI state back to the saved state and show an error. Tools like React Query and SWR have built-in support for optimistic updates via `onMutate` callbacks.
+
+### 8. How do you build a micro-frontend architecture with React?
+Micro-frontends involve splitting a large frontend app into smaller, independently deployable apps. In React, this is often achieved using **Module Federation** (via Webpack). Each micro-frontend exposes specific components or pages, and a "host" React application dynamically imports and renders them at runtime. Other approaches include using iframes or single-spa.
+
+### 9. How do you test React components effectively?
+Effective testing involves:
+- **Unit Testing:** Using Jest and React Testing Library (RTL). Focus on testing behavior and accessibility (e.g., `getByRole`, user interactions via `user-event`) rather than implementation details (like state values or CSS classes).
+- **Integration Testing:** Rendering a tree of components and mocking API calls (using MSW - Mock Service Worker) to ensure they work together.
+- **E2E Testing:** Using Cypress or Playwright to test the app in a real browser environment.
+
+### 10. How does streaming SSR work in React 18?
+Streaming Server-Side Rendering (SSR) uses `renderToPipeableStream` to send HTML to the browser in chunks as soon as it's ready, rather than waiting for the entire page to render on the server. When combined with `<Suspense>`, React sends a placeholder (fallback) first, and then "streams" the resolved content and the corresponding `<script>` tags later. This drastically improves Time To First Byte (TTFB) and First Contentful Paint (FCP).
+
+### 11. What is the difference between SWR and React Query?
+Both are excellent data-fetching libraries that handle caching, revalidation, and deduping. 
+- **SWR (Stale-While-Revalidate):** Developed by Vercel, it is highly opinionated, lightweight, and focuses on the core concept of returning cached data while fetching the latest in the background.
+- **React Query (TanStack Query):** Is more feature-rich, offering powerful DevTools, built-in mutation management, infinite queries, and selector functions. It's often preferred for complex enterprise applications.
+
+### 12. Explain how you'd design a React rendering pipeline for a large-scale app.
+1. **Edge/CDN Caching:** Static assets and SSG pages served globally.
+2. **Next.js / Remix:** For the core framework.
+3. **React Server Components (RSC):** Fetch heavy data securely on the server and pass serialized data/UI to the client to reduce JS bundle size.
+4. **Streaming SSR with Suspense:** Stream critical UI immediately and defer non-critical components.
+5. **Client Hydration:** Hydrate only the interactive "islands" or necessary client components.
+6. **State Management:** Local state (`useState`), server state (React Query), and minimal global UI state (Zustand/Redux).
+7. **Code Splitting:** Dynamic imports for heavy third-party libraries and below-the-fold components.
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Disclaimer
 
 The questions provided in this repository are the summary of frequently asked questions across numerous companies. We cannot guarantee that these questions will actually be asked during your interview process, nor should you focus on memorizing all of them. The primary purpose is for you to get a sense of what some companies might ask — do not get discouraged if you don't know the answer to all of them ⁠— that is ok!
