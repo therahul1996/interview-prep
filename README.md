@@ -5,6 +5,8 @@
 [![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](#)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=for-the-badge)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](#)
+<br>
+[![GitHub stars](https://img.shields.io/github/stars/therahul1996/interview-prep?style=social)](https://github.com/therahul1996/interview-prep/stargazers)
 
 A curated, comprehensive collection of modern interview questions and answers designed for the most in-demand technologies. Whether you are preparing for a junior position or architecting solutions as a Senior Engineer, this repository is your ultimate technical companion.
 
@@ -66,5 +68,5 @@ To get the most out of this repository, we recommend the following approach:
 ---
 
 <div align="center">
-  <b>If you found this resource helpful, please give it a ⭐️ to help others find it!</b>
+  <b>If you found this resource helpful, please <a href="https://github.com/therahul1996/interview-prep/stargazers">give it a ⭐️</a> to help others find it!</b>
 </div>
