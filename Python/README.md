@@ -1,4 +1,55 @@
 # 100 Core Python Interview Questions in 2026
+
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What are the _key features_ of _Python_?](#1-what-are-the-key-features-of-python) |
+| 1 | [Interpreted and Interactive](#1-interpreted-and-interactive) |
+| 2 | [Simple and Readable Syntax](#2-simple-and-readable-syntax) |
+| 3 | [Cross-Platform Compatibility](#3-crossplatform-compatibility) |
+| 4 | [Modular and Scalable](#4-modular-and-scalable) |
+| 5 | [Massive Library Ecosystem](#5-massive-library-ecosystem) |
+| 6 | [Versatile Application Domains](#6-versatile-application-domains) |
+| 7 | [Automatic Memory Management](#7-automatic-memory-management) |
+| 8 | [Dynamically Typed with Type Hinting](#8-dynamically-typed-with-type-hinting) |
+| 9 | [Object-Oriented and Multi-Paradigm](#9-objectoriented-and-multiparadigm) |
+| 10 | [Extensible and Integratable](#10-extensible-and-integratable) |
+| 2 | [How is _Python_ executed?](#2-how-is-python-executed) |
+| 3 | [What is _PEP 8_ and why is it important?](#3-what-is-pep-8-and-why-is-it-important) |
+| 4 | [How is memory allocation and garbage collection handled in _Python_?](#4-how-is-memory-allocation-and-garbage-collection-handled-in-python) |
+| 5 | [What are the _built-in data types_ in _Python_?](#5-what-are-the-builtin-data-types-in-python) |
+| 1 | [int](#1-int) |
+| 2 | [float](#2-float) |
+| 3 | [complex](#3-complex) |
+| 4 | [bool](#4-bool) |
+| 5 | [str](#5-str) |
+| 6 | [tuple](#6-tuple) |
+| 7 | [frozenset](#7-frozenset) |
+| 8 | [bytes](#8-bytes) |
+| 9 | [range](#9-range) |
+| 10 | [NoneType](#10-nonetype) |
+| 1 | [list](#1-list) |
+| 2 | [set](#2-set) |
+| 3 | [dict](#3-dict) |
+| 4 | [bytearray](#4-bytearray) |
+| 5 | [memoryview](#5-memoryview) |
+| 6 | [array (array.array)](#6-array-arrayarray) |
+| 7 | [deque (collections.deque)](#7-deque-collectionsdeque) |
+| 8 | [object](#8-object) |
+| 9 | [types.SimpleNamespace](#9-typessimplenamespace) |
+| 10 | [types.FunctionType](#10-typesfunctiontype) |
+| 6 | [Explain the difference between a _mutable_ and _immutable_ object.](#6-explain-the-difference-between-a-mutable-and-immutable-object) |
+| 7 | [How do you _handle exceptions_ in _Python_?](#7-how-do-you-handle-exceptions-in-python) |
+| 8 | [What is the difference between _list_ and _tuple_?](#8-what-is-the-difference-between-list-and-tuple) |
+| 9 | [How do you create a _dictionary_ in _Python_?](#9-how-do-you-create-a-dictionary-in-python) |
+| 10 | [What is the difference between _==_ and _is operator_ in _Python_?](#10-what-is-the-difference-between-and-is-operator-in-python) |
+| 11 | [How does a _Python function_ work?](#11-how-does-a-python-function-work) |
+| 12 | [What is a _lambda function_, and where would you use it?](#12-what-is-a-lambda-function-and-where-would-you-use-it) |
+| 13 | [Explain _*args_ and _**kwargs_ in _Python_.](#13-explain-args-and-kwargs-in-python) |
+| 14 | [What are _decorators_ in _Python_?](#14-what-are-decorators-in-python) |
+| 15 | [How can you create a _module_ in _Python_?](#15-how-can-you-create-a-module-in-python) |
+
 ## 1. What are the _key features_ of _Python_?
 
 **Python** is a high-level, multi-paradigm programming language known for its simplicity, **readable syntax**, and a massive ecosystem. It is widely used in AI, web development, and automation.

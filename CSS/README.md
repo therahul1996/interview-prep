@@ -1,5 +1,49 @@
 # CSS Interview Q&A
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What is the CSS box model?](#1-what-is-the-css-box-model) |
+| 2 | [What is the difference between class and ID selectors?](#2-what-is-the-difference-between-class-and-id-selectors) |
+| 3 | [What is specificity in CSS?](#3-what-is-specificity-in-css) |
+| 4 | [What is the difference between display: block, inline, and inline-block?](#4-what-is-the-difference-between-display-block-inline-and-inlineblock) |
+| 5 | [How does position: relative vs absolute vs fixed work?](#5-how-does-position-relative-vs-absolute-vs-fixed-work) |
+| 6 | [What is the z-index property?](#6-what-is-the-zindex-property) |
+| 7 | [What is the difference between em, rem, px, and %?](#7-what-is-the-difference-between-em-rem-px-and-) |
+| 8 | [How do you center a div horizontally and vertically?](#8-how-do-you-center-a-div-horizontally-and-vertically) |
+| 9 | [What is the cascade in CSS?](#9-what-is-the-cascade-in-css) |
+| 10 | [What are pseudo-classes and pseudo-elements?](#10-what-are-pseudoclasses-and-pseudoelements) |
+| 11 | [What is the difference between visibility: hidden and display: none?](#11-what-is-the-difference-between-visibility-hidden-and-display-none) |
+| 12 | [What are CSS combinators?](#12-what-are-css-combinators) |
+| 13 | [What is float and clearfix?](#13-what-is-float-and-clearfix) |
+| 14 | [What are CSS variables (custom properties)?](#14-what-are-css-variables-custom-properties) |
+| 15 | [What is the difference between margin and padding?](#15-what-is-the-difference-between-margin-and-padding) |
+| 16 | [What is the stacking context and how is it created?](#16-what-is-the-stacking-context-and-how-is-it-created) |
+| 17 | [Explain CSS Grid vs Flexbox — when to use which?](#17-explain-css-grid-vs-flexbox-—-when-to-use-which) |
+| 18 | [What is CSS specificity and how does !important affect it?](#18-what-is-css-specificity-and-how-does-important-affect-it) |
+| 19 | [What are CSS Layers (@layer) and why use them?](#19-what-are-css-layers-@layer-and-why-use-them) |
+| 20 | [How does CSS containment (contain property) improve performance?](#20-how-does-css-containment-contain-property-improve-performance) |
+| 21 | [What is a CSS logical property?](#21-what-is-a-css-logical-property) |
+| 22 | [How does will-change work and what are its pitfalls?](#22-how-does-willchange-work-and-what-are-its-pitfalls) |
+| 23 | [Explain CSS animations vs transitions — key differences.](#23-explain-css-animations-vs-transitions-—-key-differences) |
+| 24 | [What is a CSS Grid subgrid and when is it useful?](#24-what-is-a-css-grid-subgrid-and-when-is-it-useful) |
+| 25 | [What is the difference between transform and position for animation?](#25-what-is-the-difference-between-transform-and-position-for-animation) |
+| 26 | [What are container queries and how do they differ from media queries?](#26-what-are-container-queries-and-how-do-they-differ-from-media-queries) |
+| 27 | [Explain BEM methodology and why it helps with CSS at scale.](#27-explain-bem-methodology-and-why-it-helps-with-css-at-scale) |
+| 28 | [What is the clamp() function in CSS?](#28-what-is-the-clamp-function-in-css) |
+| 29 | [What is margin collapse and when does it happen?](#29-what-is-margin-collapse-and-when-does-it-happen) |
+| 30 | [What is the difference between :is(), :where(), and :not()?](#30-what-is-the-difference-between-is-where-and-not) |
+| 31 | [What is the CSS Object Model (CSSOM)?](#31-what-is-the-css-object-model-cssom) |
+| 32 | [What is the difference between mobile-first and desktop-first approaches?](#32-what-is-the-difference-between-mobilefirst-and-desktopfirst-approaches) |
+| 33 | [How do you implement dark mode in modern CSS?](#33-how-do-you-implement-dark-mode-in-modern-css) |
+| 34 | [What are the benefits of using a CSS preprocessor like Sass or Less?](#34-what-are-the-benefits-of-using-a-css-preprocessor-like-sass-or-less) |
+| 35 | [Explain CSS-in-JS vs CSS Modules vs Utility-first CSS.](#35-explain-cssinjs-vs-css-modules-vs-utilityfirst-css) |
+| 36 | [How do you hide an element visually but keep it accessible for screen readers?](#36-how-do-you-hide-an-element-visually-but-keep-it-accessible-for-screen-readers) |
+| 37 | [How do you respect user preferences regarding animations?](#37-how-do-you-respect-user-preferences-regarding-animations) |
+| 38 | [Explain flex-grow, flex-shrink, and flex-basis.](#38-explain-flexgrow-flexshrink-and-flexbasis) |
+
+
 This document contains 30 basic and advanced CSS interview questions and answers.
 
 ## Basic (15)

@@ -1,5 +1,34 @@
 # API Interview Questions (100)
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What is an API?](#1-what-is-an-api) |
+| 2 | [What is REST API?](#2-what-is-rest-api) |
+| 3 | [What are HTTP methods?](#3-what-are-http-methods) |
+| 4 | [Difference between GET and POST?](#4-difference-between-get-and-post) |
+| 5 | [What is an endpoint?](#5-what-is-an-endpoint) |
+| 7 | [What is JSON?](#7-what-is-json) |
+| 8 | [Common HTTP Status Codes](#8-common-http-status-codes) |
+| 11 | [What is Statelessness?](#11-what-is-statelessness) |
+| 12 | [What is CRUD?](#12-what-is-crud) |
+| 31 | [Authentication vs Authorization](#31-authentication-vs-authorization) |
+| 32 | [What is JWT (JSON Web Token)?](#32-what-is-jwt-json-web-token) |
+| 36 | [What is OAuth?](#36-what-is-oauth) |
+| 40 | [What is Idempotency?](#40-what-is-idempotency) |
+| 42 | [What is Pagination?](#42-what-is-pagination) |
+| 46 | [What is HATEOAS?](#46-what-is-hateoas) |
+| 48 | [What is Microservices Architecture?](#48-what-is-microservices-architecture) |
+| 50 | [REST vs SOAP](#50-rest-vs-soap) |
+| 61 | [How do you secure an API?](#61-how-do-you-secure-an-api) |
+| 74 | [What is a Webhook?](#74-what-is-a-webhook) |
+| 81 | [What is a Circuit Breaker?](#81-what-is-a-circuit-breaker) |
+| 89 | [Blue-Green vs. Canary Deployment](#89-bluegreen-vs-canary-deployment) |
+| 98 | [What is Distributed Tracing?](#98-what-is-distributed-tracing) |
+| 99 | [What is an API-First Approach?](#99-what-is-an-apifirst-approach) |
+
+
 A comprehensive guide covering Beginner, Advanced, and Real-Time Scenarios for API interviews.
 
 ---

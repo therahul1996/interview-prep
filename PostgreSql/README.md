@@ -1,5 +1,22 @@
 # Postgres Interview Questions And Answers
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What is a query in PostgreSQL?](#1-what-is-a-query-in-postgresql) |
+| 2 | [How do you create a basic select query in PostgreSQL?](#2-how-do-you-create-a-basic-select-query-in-postgresql) |
+| 3 | [What is a parameterized query in PostgreSQL?](#3-what-is-a-parameterized-query-in-postgresql) |
+| 4 | [How can you calculate a field's value in a PostgreSQL query?](#4-how-can-you-calculate-a-field's-value-in-a-postgresql-query) |
+| 5 | [What is a join in PostgreSQL?](#5-what-is-a-join-in-postgresql) |
+| 6 | [What is a subquery in PostgreSQL?](#6-what-is-a-subquery-in-postgresql) |
+| 7 | [How do you sort query results in ascending or descending order in PostgreSQL?](#7-how-do-you-sort-query-results-in-ascending-or-descending-order-in-postgresql) |
+| 8 | [What is a wildcard character in PostgreSQL queries?](#8-what-is-a-wildcard-character-in-postgresql-queries) |
+| 9 | [How do you use a wildcard in a PostgreSQL query?](#9-how-do-you-use-a-wildcard-in-a-postgresql-query) |
+| 10 | [What is a limit query in PostgreSQL?](#10-what-is-a-limit-query-in-postgresql) |
+| 11 | [How do you perform grouping and aggregate functions in PostgreSQL?](#11-how-do-you-perform-grouping-and-aggregate-functions-in-postgresql) |
+
+
 Most targeted up-to-date Postgres interview questions and answers list
 
 # Table of Contents

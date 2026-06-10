@@ -2,6 +2,20 @@
 
 This document contains advanced AWS interview questions tailored for Senior Software Developers and Cloud Architects.
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [How would you choose between EC2, ECS, EKS, and AWS Lambda for a new microservices architecture?](#1-how-would-you-choose-between-ec2-ecs-eks-and-aws-lambda-for-a-new-microservices-architecture) |
+| 2 | [How do you mitigate "cold starts" in AWS Lambda?](#2-how-do-you-mitigate-cold-starts-in-aws-lambda) |
+| 3 | [When would you choose DynamoDB over Amazon Aurora / RDS?](#3-when-would-you-choose-dynamodb-over-amazon-aurora--rds) |
+| 4 | [Explain the difference between S3 Standard, S3 Standard-IA, and S3 Glacier.](#4-explain-the-difference-between-s3-standard-s3-standard-ia-and-s3-glacier) |
+| 5 | [What is the difference between SQS, SNS, and EventBridge?](#5-what-is-the-difference-between-sqs-sns-and-eventbridge) |
+| 6 | [What is the difference between an IAM Role and a Resource-Based Policy?](#6-what-is-the-difference-between-an-iam-role-and-a-resource-based-policy) |
+| 7 | [How would you secure a web application deployed on AWS?](#7-how-would-you-secure-a-web-application-deployed-on-aws) |
+| 8 | [How do you design an active-active Multi-Region architecture on AWS?](#8-how-do-you-design-an-active-active-multi-region-architecture-on-aws) |
+| 9 | [Terraform vs AWS CloudFormation vs AWS CDK?](#9-terraform-vs-aws-cloudformation-vs-aws-cdk) |
+
 ## Architecture & Compute
 
 ### 1. How would you choose between EC2, ECS, EKS, and AWS Lambda for a new microservices architecture?

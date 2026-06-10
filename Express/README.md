@@ -1,5 +1,75 @@
 # Top 58 Express.js Interview Questions and Answers (2025)
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What is _Express.js_, and how does it relate to _Node.js_?](#1-what-is-expressjs-and-how-does-it-relate-to-nodejs) |
+| 2 | [Explain the concept of _middleware_ in _Express.js_.](#2-explain-the-concept-of-middleware-in-expressjs) |
+| 3 | [How would you set up a basic _Express.js_ application?](#3-how-would-you-set-up-a-basic-expressjs-application) |
+| 1 | [Initialize the Project](#1-initialize-the-project) |
+| 2 | [Install Dependencies](#2-install-dependencies) |
+| 3 | [Create the Application](#3-create-the-application) |
+| 4 | [Run the Application](#4-run-the-application) |
+| 4 | [What is the purpose of the `app.use()` function?](#4-what-is-the-purpose-of-the-appuse-function) |
+| 5 | [How do you serve _static files_ using _Express.js_?](#5-how-do-you-serve-static-files-using-expressjs) |
+| 6 | [Discuss the difference between `app.get()` and `app.post()` in _Express.js_.](#6-discuss-the-difference-between-appget-and-apppost-in-expressjs) |
+| 7 | [How do you retrieve the _URL parameters_ from a _GET request_ in _Express.js_?](#7-how-do-you-retrieve-the-url-parameters-from-a-get-request-in-expressjs) |
+| 8 | [What are _route handlers_, and how would you implement them?](#8-what-are-route-handlers-and-how-would-you-implement-them) |
+| 9 | [How do you enable _CORS_ in an _Express.js_ application?](#9-how-do-you-enable-cors-in-an-expressjs-application) |
+| 10 | [Explain the use of `next()` in _Express.js middleware_.](#10-explain-the-use-of-next-in-expressjs-middleware) |
+| 11 | [What is the role of the `express.Router` class?](#11-what-is-the-role-of-the-expressrouter-class) |
+| 12 | [How do you handle _404 errors_ in _Express.js_?](#12-how-do-you-handle-404-errors-in-expressjs) |
+| 13 | [What are the differences between `req.query` and `req.params`?](#13-what-are-the-differences-between-reqquery-and-reqparams) |
+| 14 | [Describe the purpose of `req.body` and how you would access it.](#14-describe-the-purpose-of-reqbody-and-how-you-would-access-it) |
+| 15 | [How do you create a _middleware_ that logs the _request method_ and _URL_ for every request?](#15-how-do-you-create-a-middleware-that-logs-the-request-method-and-url-for-every-request) |
+| 16 | [How does Express.js handle errors, and what is the correct way to write error-handling middleware?](#16-how-does-expressjs-handle-errors-and-what-is-the-correct-way-to-write-errorhandling-middleware) |
+| 17 | [How do you handle errors inside async/await route handlers?](#17-how-do-you-handle-errors-inside-asyncawait-route-handlers) |
+| 18 | [What is a template engine, and how do you use one in Express?](#18-what-is-a-template-engine-and-how-do-you-use-one-in-express) |
+| 19 | [What is the difference between `app.use()` and `app.get()` / `app.post()`?](#19-what-is-the-difference-between-appuse-and-appget-apppost) |
+| 20 | [How do you validate incoming request data in Express?](#20-how-do-you-validate-incoming-request-data-in-express) |
+| 21 | [How do you implement sessions in Express?](#21-how-do-you-implement-sessions-in-express) |
+| 22 | [How do you implement JWT-based authentication in Express?](#22-how-do-you-implement-jwtbased-authentication-in-express) |
+| 23 | [What is Helmet.js and why should you use it?](#23-what-is-helmetjs-and-why-should-you-use-it) |
+| 24 | [How do you implement rate limiting in Express?](#24-how-do-you-implement-rate-limiting-in-express) |
+| 25 | [What is the difference between `res.send()`, `res.json()`, and `res.end()`?](#25-what-is-the-difference-between-ressend-resjson-and-resend) |
+| 26 | [How do you chain multiple route handlers for a single route?](#26-how-do-you-chain-multiple-route-handlers-for-a-single-route) |
+| 27 | [What is `app.route()` and when would you use it?](#27-what-is-approute-and-when-would-you-use-it) |
+| 28 | [How does Express handle file uploads?](#28-how-does-express-handle-file-uploads) |
+| 29 | [How do you compress responses in Express to improve performance?](#29-how-do-you-compress-responses-in-express-to-improve-performance) |
+| 30 | [How do you structure a large Express application to keep it maintainable?](#30-how-do-you-structure-a-large-express-application-to-keep-it-maintainable) |
+| 31 | [How do you test an Express application?](#31-how-do-you-test-an-express-application) |
+| 32 | [What is the purpose of `express.json()` and `express.urlencoded()`?](#32-what-is-the-purpose-of-expressjson-and-expressurlencoded) |
+| 33 | [Why would `req.body` be `undefined`, and how do you fix it?](#33-why-would-reqbody-be-undefined-and-how-do-you-fix-it) |
+| 34 | [How do you redirect a request in Express?](#34-how-do-you-redirect-a-request-in-express) |
+| 35 | [What is the difference between `res.redirect()` and `res.render()`?](#35-what-is-the-difference-between-resredirect-and-resrender) |
+| 36 | [How do you set custom HTTP response headers in Express?](#36-how-do-you-set-custom-http-response-headers-in-express) |
+| 37 | [What is the `req.ip` property, and how do you get the real client IP behind a proxy?](#37-what-is-the-reqip-property-and-how-do-you-get-the-real-client-ip-behind-a-proxy) |
+| 38 | [How do you handle environment-specific configuration in Express?](#38-how-do-you-handle-environmentspecific-configuration-in-express) |
+| 39 | [How do you use Passport.js for authentication in Express?](#39-how-do-you-use-passportjs-for-authentication-in-express) |
+| 40 | [What happens if you call `next()` after already sending a response?](#40-what-happens-if-you-call-next-after-already-sending-a-response) |
+| 41 | [Can you call `res.send()` more than once in the same request?](#41-can-you-call-ressend-more-than-once-in-the-same-request) |
+| 42 | [What is the difference between third-party middleware and built-in middleware in Express?](#42-what-is-the-difference-between-thirdparty-middleware-and-builtin-middleware-in-express) |
+| 43 | [What is `morgan` and why is it useful?](#43-what-is-morgan-and-why-is-it-useful) |
+| 44 | [How do you enable HTTP request logging in Express?](#44-how-do-you-enable-http-request-logging-in-express) |
+| 45 | [What is the difference between cookies and sessions in Express?](#45-what-is-the-difference-between-cookies-and-sessions-in-express) |
+| 46 | [How do you set and read cookies in Express?](#46-how-do-you-set-and-read-cookies-in-express) |
+| 47 | [How do you handle a REST API with Express and what conventions should you follow?](#47-how-do-you-handle-a-rest-api-with-express-and-what-conventions-should-you-follow) |
+| 48 | [How do you implement API versioning in Express?](#48-how-do-you-implement-api-versioning-in-express) |
+| 49 | [How do you connect an Express app to a MongoDB database?](#49-how-do-you-connect-an-express-app-to-a-mongodb-database) |
+| 50 | [How do you handle PATCH vs PUT requests differently in Express?](#50-how-do-you-handle-patch-vs-put-requests-differently-in-express) |
+| 51 | [How do you send a file as a response in Express?](#51-how-do-you-send-a-file-as-a-response-in-express) |
+| 52 | [What is middleware order and why does it matter?](#52-what-is-middleware-order-and-why-does-it-matter) |
+| 53 | [How do you implement pagination in an Express REST API?](#53-how-do-you-implement-pagination-in-an-express-rest-api) |
+| 54 | [How do you prevent SQL injection and XSS attacks in an Express application?](#54-how-do-you-prevent-sql-injection-and-xss-attacks-in-an-express-application) |
+| 55 | [What is `process.env.NODE_ENV` and how does it affect your Express app?](#55-what-is-processenvnodeenv-and-how-does-it-affect-your-express-app) |
+| 56 | [How do you gracefully shut down an Express server?](#56-how-do-you-gracefully-shut-down-an-express-server) |
+| 57 | [How do you implement caching in an Express application?](#57-how-do-you-implement-caching-in-an-express-application) |
+| 1 | [HTTP Cache-Control Headers](#1-http-cachecontrol-headers) |
+| 2 | [Server-Side Caching with Redis](#2-serverside-caching-with-redis) |
+| 58 | [What are some best practices for building production-ready Express applications?](#58-what-are-some-best-practices-for-building-productionready-express-applications) |
+
+
 
 ## 1. What is _Express.js_, and how does it relate to _Node.js_?
 

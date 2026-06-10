@@ -1,5 +1,28 @@
 # 55 Common Docker Interview Questions in 2026
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What is _Docker_, and how is it different from _virtual machines_?](#1-what-is-docker-and-how-is-it-different-from-virtual-machines) |
+| 2 | [Can you explain what a _Docker image_ is?](#2-can-you-explain-what-a-docker-image-is) |
+| 3 | [How does a _Docker container_ differ from a _Docker image_?](#3-how-does-a-docker-container-differ-from-a-docker-image) |
+| 4 | [What is the _Docker Hub_, and what is it used for?](#4-what-is-the-docker-hub-and-what-is-it-used-for) |
+| 5 | [Explain the _Dockerfile_ and its significance in _Docker_.](#5-explain-the-dockerfile-and-its-significance-in-docker) |
+| 6 | [How does _Docker_ use _layers_ to build images?](#6-how-does-docker-use-layers-to-build-images) |
+| 7 | [What's the difference between the `COPY` and `ADD` commands in a _Dockerfile_?](#7-what's-the-difference-between-the-copy-and-add-commands-in-a-dockerfile) |
+| 8 | [What’s the purpose of the `.dockerignore` file?](#8-what’s-the-purpose-of-the-dockerignore-file) |
+| 9 | [How would you go about creating a _Docker image_ from an existing _container_?](#9-how-would-you-go-about-creating-a-docker-image-from-an-existing-container) |
+| 10 | [In practice, how do you reduce the size of _Docker images_?](#10-in-practice-how-do-you-reduce-the-size-of-docker-images) |
+| 11 | [What command is used to run a _Docker container_ from an _image_?](#11-what-command-is-used-to-run-a-docker-container-from-an-image) |
+| 12 | [Can you explain what a _Docker namespace_ is and its benefits?](#12-can-you-explain-what-a-docker-namespace-is-and-its-benefits) |
+| 13 | [What is a _Docker volume_, and when would you use it?](#13-what-is-a-docker-volume-and-when-would-you-use-it) |
+| 14 | [Explain the use and significance of the `docker-compose` tool.](#14-explain-the-use-and-significance-of-the-dockercompose-tool) |
+| 15 | [Can _Docker containers_ running on the same _host_ communicate with each other by default? If so, how?](#15-can-docker-containers-running-on-the-same-host-communicate-with-each-other-by-default-if-so-how) |
+| 1 | [By Container IP](#1-by-container-ip) |
+| 2 | [By Container Name](#2-by-container-name) |
+
+
 ## 1. What is _Docker_, and how is it different from _virtual machines_?
 
 **Docker** is a **containerization** platform that simplifies application deployment by ensuring software and its dependencies run uniformly on any infrastructure, from laptops to servers to the cloud.

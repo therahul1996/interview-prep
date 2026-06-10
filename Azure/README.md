@@ -1,5 +1,20 @@
 # Azure Interview Q&A (Senior Software Developer)
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [How do you choose between Azure App Service, Azure Kubernetes Service (AKS), and Azure Functions?](#1-how-do-you-choose-between-azure-app-service-azure-kubernetes-service-aks-and-azure-functions) |
+| 2 | [How do you handle cold starts in Azure Functions?](#2-how-do-you-handle-cold-starts-in-azure-functions) |
+| 3 | [When should you use Cosmos DB vs Azure SQL Database?](#3-when-should-you-use-cosmos-db-vs-azure-sql-database) |
+| 4 | [What are the different Azure Blob Storage tiers?](#4-what-are-the-different-azure-blob-storage-tiers) |
+| 5 | [Explain the difference between Azure Service Bus, Event Grid, and Event Hubs.](#5-explain-the-difference-between-azure-service-bus-event-grid-and-event-hubs) |
+| 6 | [What is the difference between a Managed Identity and a Service Principal?](#6-what-is-the-difference-between-a-managed-identity-and-a-service-principal) |
+| 7 | [How would you secure a public-facing API in Azure?](#7-how-would-you-secure-a-publicfacing-api-in-azure) |
+| 8 | [What is the difference between Availability Zones and Region Pairs in Azure?](#8-what-is-the-difference-between-availability-zones-and-region-pairs-in-azure) |
+| 9 | [Compare ARM Templates, Bicep, and Terraform for Azure IaC.](#9-compare-arm-templates-bicep-and-terraform-for-azure-iac) |
+
+
 This document contains advanced Azure interview questions tailored for Senior Software Developers and Cloud Architects.
 
 ## Architecture & Compute

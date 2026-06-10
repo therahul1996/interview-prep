@@ -1,5 +1,28 @@
 # 100 Must-Know React Native Interview Questions in 2026
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What is _React Native_ and how does it differ from _React_?](#1-what-is-react-native-and-how-does-it-differ-from-react) |
+| 2 | [Can you explain the concept of "_Learn once, write anywhere_" in the context of _React Native_?](#2-can-you-explain-the-concept-of-"learn-once-write-anywhere"-in-the-context-of-react-native) |
+| 3 | [How do you create a basic _React Native application_?](#3-how-do-you-create-a-basic-react-native-application) |
+| 4 | [What are _components_ in _React Native_?](#4-what-are-components-in-react-native) |
+| 5 | [Explain the purpose of the `render()` function in a _React Native component_.](#5-explain-the-purpose-of-the-render-function-in-a-react-native-component) |
+| 6 | [What is _JSX_ and how is it used in _React Native_?](#6-what-is-jsx-and-how-is-it-used-in-react-native) |
+| 7 | [Can you list some of the core components in _React Native_?](#7-can-you-list-some-of-the-core-components-in-react-native) |
+| 8 | [How do you handle _state management_ in _React Native_?](#8-how-do-you-handle-state-management-in-react-native) |
+| 9 | [What are _props_ in _React Native_ and how are they used?](#9-what-are-props-in-react-native-and-how-are-they-used) |
+| 10 | [What is the significance of the _Flexbox_ layout in _React Native_?](#10-what-is-the-significance-of-the-flexbox-layout-in-react-native) |
+| 11 | [How do you debug a _React Native application_?](#11-how-do-you-debug-a-react-native-application) |
+| 12 | [Explain the concept of _hot reloading_ in _React Native_.](#12-explain-the-concept-of-hot-reloading-in-react-native) |
+| 13 | [How do you handle user input in _React Native_?](#13-how-do-you-handle-user-input-in-react-native) |
+| 14 | [What is a `TouchableHighlight` in _React Native_?](#14-what-is-a-touchablehighlight-in-react-native) |
+| 15 | [Describe the _View_ component and its purpose in _React Native_.](#15-describe-the-view-component-and-its-purpose-in-react-native) |
+| 1 | [View Doesn't Represent Visual Elements](#1-view-doesn't-represent-visual-elements) |
+| 2 | [View Doesn't Guarantee a Unique End-Component](#2-view-doesn't-guarantee-a-unique-endcomponent) |
+
+
 <br>
 
 ## 1. What is _React Native_ and how does it differ from _React_?

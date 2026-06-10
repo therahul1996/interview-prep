@@ -1,4 +1,28 @@
 # 100 Core MongoDB Interview Questions in 2026
+
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [What is _MongoDB_ and what are its main features?](#1-what-is-mongodb-and-what-are-its-main-features) |
+| 2 | [How does _MongoDB_ differ from relational databases?](#2-how-does-mongodb-differ-from-relational-databases) |
+| 3 | [Can you describe the structure of data in _MongoDB_?](#3-can-you-describe-the-structure-of-data-in-mongodb) |
+| 4 | [What is a _Document_ in _MongoDB_?](#4-what-is-a-document-in-mongodb) |
+| 5 | [How is data stored in _collections_ in _MongoDB_?](#5-how-is-data-stored-in-collections-in-mongodb) |
+| 6 | [Describe what a _MongoDB database_ is.](#6-describe-what-a-mongodb-database-is) |
+| 1 | [Collection](#1-collection) |
+| 2 | [Document](#2-document) |
+| 3 | [Field](#3-field) |
+| 7 | [What is the default _port_ on which _MongoDB_ listens?](#7-what-is-the-default-port-on-which-mongodb-listens) |
+| 8 | [How does _MongoDB_ provide high availability and disaster recovery?](#8-how-does-mongodb-provide-high-availability-and-disaster-recovery) |
+| 9 | [What are _indexes_ in _MongoDB_, and why are they used?](#9-what-are-indexes-in-mongodb-and-why-are-they-used) |
+| 10 | [What is the role of the _id field_ in _MongoDB documents_?](#10-what-is-the-role-of-the-id-field-in-mongodb-documents) |
+| 11 | [How do you create a new _MongoDB collection_?](#11-how-do-you-create-a-new-mongodb-collection) |
+| 12 | [What is the syntax to insert a _document_ into a _MongoDB collection_?](#12-what-is-the-syntax-to-insert-a-document-into-a-mongodb-collection) |
+| 13 | [Describe how to read data from a _MongoDB collection_.](#13-describe-how-to-read-data-from-a-mongodb-collection) |
+| 14 | [Explain how to update _documents_ in _MongoDB_.](#14-explain-how-to-update-documents-in-mongodb) |
+| 15 | [What are the _MongoDB commands_ for deleting _documents_?](#15-what-are-the-mongodb-commands-for-deleting-documents) |
+
 ## 1. What is _MongoDB_ and what are its main features?
 
 **MongoDB** is a robust, document-oriented NoSQL database designed for high performance, scalability, and developer agility.

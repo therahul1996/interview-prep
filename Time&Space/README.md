@@ -1,5 +1,22 @@
 # Big O Notation: Time and Space Complexity Guide
 
+### Table of Contents
+
+| No. | Questions |
+|---- | --------- |
+| 1 | [Constant Time: $O(1)$](#1-constant-time-o1) |
+| 2 | [Logarithmic Time: $O(\log n)$](#2-logarithmic-time-o\log-n) |
+| 3 | [Linear Time: $O(n)$](#3-linear-time-on) |
+| 4 | [Linearithmic Time: $O(n \log n)$](#4-linearithmic-time-on-\log-n) |
+| 5 | [Quadratic Time: $O(n^2)$](#5-quadratic-time-on2) |
+| 6 | [Exponential Time: $O(2^n)$](#6-exponential-time-o2n) |
+| 7 | [Factorial Time: $O(n!)$](#7-factorial-time-on) |
+| 1 | [Constant Space: $O(1)$](#1-constant-space-o1) |
+| 2 | [Linear Space: $O(n)$](#2-linear-space-on) |
+| 3 | [Quadratic Space: $O(n^2)$](#3-quadratic-space-on2) |
+| 4 | [Logarithmic Space: $O(\log n)$](#4-logarithmic-space-o\log-n) |
+
+
 A comprehensive cheat sheet for understanding algorithm performance in JavaScript. This repository serves as a quick reference for the most common time and space complexities.
 
 ## 🚀 Complexity Overview
