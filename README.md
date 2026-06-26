@@ -49,6 +49,11 @@ A curated, comprehensive collection of modern interview questions and answers de
 | [**Azure**](./Azure/README.md) | ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white) | App Service, AKS, Cosmos DB, Functions, Managed Identities |
 | [**Docker**](./Docker/README.md) | ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white) | Multi-stage Builds, Volumes, Networking, Orchestration |
 
+### ⛓️ Web3 & Blockchain
+| Topic | Tech | Core Concepts |
+|---|---|---|
+| [**Solidity**](./Solidity/README.md) | ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=flat&logo=solidity&logoColor=white) | Smart Contracts, EVM, Gas, Reentrancy, Data Locations |
+
 ### 🧠 Computer Science
 | Topic | Tech | Core Concepts |
 |---|---|---|
